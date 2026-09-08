@@ -1,0 +1,22 @@
+# PAIMANA deploy - exact versions the bundled models were pickled with
+fastapi==0.141.1
+uvicorn==0.52.4
+pandas==2.2.3
+numpy==2.3.5
+scikit-learn==1.6.1
+catboost==1.2.10
+xgboost==3.4.1
+lightgbm==4.7.0
+shap==0.52.0
+lifelines==0.30.3
+statsmodels==0.15.0
+joblib==1.5.3
+uvicorn[standard]==0.52.4
+# transitive pins (kept exact for reproducible builds)
+scipy==1.17.1
+numba==0.66.0
+llvmlite==0.48.0
+pydantic==2.13.4
+starlette==1.6.0
+formulaic==1.2.2
+autograd==1.9.1

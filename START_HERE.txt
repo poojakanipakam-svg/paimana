@@ -1,0 +1,29 @@
+=============================================================
+ PAIMANA - START HERE
+=============================================================
+
+OPTION A - RUN ON YOUR LAPTOP (best for the SIH demo)
+-----------------------------------------------------
+1. Unzip this package.
+2. Open the "paimana" folder and double-click:  run_windows.bat
+   (First run installs Python packages - needs internet once.
+    For a private environment, run make_venv_windows.bat first.)
+3. Open  http://localhost:8000  in your browser.
+   Keep the black console window open while using the app.
+
+Linux / macOS:  ./run.sh
+
+
+OPTION B - DEPLOY ONLINE (Railway / Hugging Face / Render)
+----------------------------------------------------------
+1. Create a GitHub repository.
+2. Upload the CONTENTS of this "paimana" folder to the repo ROOT.
+   IMPORTANT: Dockerfile, requirements.txt, start.sh, backend/ and data/
+   must sit at the TOP LEVEL of the repo - NOT inside a "paimana"
+   subfolder, or the deploy will fail.
+3. Railway: connect the repo -> Dockerfile is auto-detected -> after the
+   build: Settings -> Deploy -> Resources -> Memory 2 GB, then
+   Settings -> Networking -> Generate Domain.
+   Hugging Face Spaces (permanently free): step-by-step in DEPLOY_GUIDE.md.
+
+Full details: README.md, DEPLOY_GUIDE.md, WINDOWS_QUICKSTART.txt
